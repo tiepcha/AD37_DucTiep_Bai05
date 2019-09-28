@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".FoodOrder"
+    >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rlaction"
+        android:paddingVertical="10dp"
+        android:paddingHorizontal="20dp"
+        android:background="@android:color/darker_gray">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Food Order"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_centerVertical="true"/>
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:id="@+id/imgcart"
+            android:background="@drawable/shoppingcart"
+            android:layout_alignParentEnd="true"/>
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="20dp"
+            android:src="@drawable/avatar"
+            android:id="@+id/imgnumcart"
+            android:background="@android:color/black"
+            android:layout_alignRight="@id/imgcart"/>
+
+        <TextView
+            android:layout_width="25dp"
+            android:layout_height="20dp"
+            android:id="@+id/tvnumcart"
+            android:layout_alignStart="@id/imgnumcart"
+            android:text="0"
+
+            android:textAlignment="center"
+            android:textColor="@android:color/white"/>
+
+
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvwelcome"
+        android:layout_marginBottom="20dp"
+        android:text="Welcome Tiep"
+        android:layout_below="@+id/rlaction"
+        android:layout_marginLeft="20dp"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+
+
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:id="@+id/rcvfood"
+        android:layout_below="@id/tvwelcome"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/rectangle2"
+        android:layout_marginHorizontal="20dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvtotalprice"
+        android:layout_below="@id/rcvfood"
+        android:text="Total Price"
+        android:layout_marginLeft="20dp"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvtotalprice2"
+        android:layout_below="@id/rcvfood"
+        android:text="0$"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="20dp"
+        />
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnord"
+        android:text="Order"
+        android:layout_below="@+id/tvtotalprice"
+
+        android:textStyle="bold"
+        android:background="@android:color/darker_gray"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvsuccess"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="6dp"
+
+
+        />
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

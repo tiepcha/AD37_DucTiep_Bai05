@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Food_order2"
+    android:id="@+id/foodorder2"
+    android:paddingTop="30dp">
+    <androidx.recyclerview.widget.RecyclerView
+
+
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:id="@+id/rcvfood"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/rectangle2"
+        android:layout_marginHorizontal="20dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvtotalprice"
+        android:layout_below="@id/rcvfood"
+        android:text="Total Price"
+        android:layout_marginLeft="20dp"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvtotalprice2"
+        android:layout_below="@id/rcvfood"
+        android:text="0$"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="20dp"
+        />
+
+</RelativeLayout>
